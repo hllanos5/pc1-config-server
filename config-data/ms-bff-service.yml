@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: bff-microservice
+external:
+  api:
+    client: http://localhost:8081
+    product: http://localhost:8082
+    transaction: http://localhost:8083
