@@ -6,3 +6,9 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/bank
+configuracion:
+  pasivo:
+    limite: 10 #cantidad de movimiento mensuales
+  plazo-fijo:
+    movimiento: 1 #1 movimiento tipo retiro al mes
+    deposito: 1 #1 movimiento tipo deposito al mes
