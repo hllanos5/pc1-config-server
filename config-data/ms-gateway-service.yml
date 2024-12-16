@@ -4,7 +4,7 @@ spring:
   application:
     name: gateway-microservice
   cloud:
-    gatewat:
+    gateway:
       routes[0]:
         id: bff-bank
         url: http://bff-bank:9090
