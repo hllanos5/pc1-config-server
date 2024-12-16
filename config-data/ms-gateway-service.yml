@@ -5,6 +5,9 @@ spring:
     name: gateway-microservice
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: bff-bank
           url: http://bff-bank:9090
