@@ -3,13 +3,12 @@ server:
 spring:
   application:
     name: gateway-microservice
-  cloud:
+    cloud:
     gateway:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: bff-bank
-          url: http://bff-bank:9090
-          predicates: 
-            - Path=/client/**
+      routes[0]:
+        id: bff-bank
+        uri: http://bff-bank:9090
+        predicates[0]: Path=/client/**
