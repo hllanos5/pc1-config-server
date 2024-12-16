@@ -6,7 +6,7 @@ spring:
   cloud:
     gateway:
       routes:
-        id: bff-bank
-        url: http://bff-bank:9090
-        predicates: 
-          - Path=/client/**
+        - id: bff-bank
+          url: http://bff-bank:9090
+          predicates: 
+            - Path=/client/**
