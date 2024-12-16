@@ -1,8 +1,13 @@
 version: '3.7'
 services:
-  app:
+  ms-config-server:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - 7070:7070
+    networks:
+      - servicio_ntt
+networks:
+  servicio_ntt:
+    external: true
