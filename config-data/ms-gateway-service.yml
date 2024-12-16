@@ -1,0 +1,11 @@
+server:
+  port: 9595
+spring:
+  application:
+    name: gateway-microservice
+  cloud:
+    gatewat:
+      routes[0]:
+        id: bff-bank
+        url: http://bff-bank:8080
+        predicates[0]: Path=/client/**
