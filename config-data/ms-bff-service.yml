@@ -5,6 +5,6 @@ spring:
     name: bff-microservice
 external:
   api:
-    client: http://localhost:8081
-    product: http://localhost:8082
-    transaction: http://localhost:8083
+    client: http://client-microservice:8081
+    product: http://product-microservice:8082
+    transaction: http://transaction-microservice:8083

@@ -5,7 +5,8 @@ spring:
     name: transaction-microservice
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bank
+      #uri: mongodb://localhost:27017/bank
+      uri: mongodb://mongodb:27017/bank
 configuracion:
   pasivo:
     limite: 10 #cantidad de movimiento mensuales
