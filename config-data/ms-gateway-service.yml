@@ -1,5 +1,5 @@
 server:
-  port: 9595
+  port: 8080
 spring:
   application:
     name: gateway-microservice
@@ -7,5 +7,5 @@ spring:
     gatewat:
       routes[0]:
         id: bff-bank
-        url: http://bff-bank:8080
+        url: http://bff-bank:9090
         predicates[0]: Path=/client/**
